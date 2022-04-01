@@ -16,6 +16,9 @@ if they don't have very specific requirements that any of those libraries
 offer. Instead the user can choose what they might be already using in their
 applications to reduce the total number of dependencies.
 
+In addition, this library _could_ give default implementations for popular
+libraries that end-users could just use out of the box.
+
 ## `clj-easy.tools.json`
 
 Provides the `JSON` protocol with functions:
