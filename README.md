@@ -16,7 +16,7 @@ The goal of this project is that libraries can program against a protocol
 without including a specific implementation. For example, a library which needs
 JSON should not have to choose between Cheshire, clojure.data.json or jsonista
 if they don't have very specific requirements that any of those libraries
-offer. Instead the user can choose what they might be already using in their
+offer. Instead the end-user can choose what they might be already using in their
 applications to reduce the total number of dependencies.
 
 In addition, this library _could_ give default implementations for popular
