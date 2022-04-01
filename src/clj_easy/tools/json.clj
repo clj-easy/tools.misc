@@ -1,7 +1,7 @@
 (ns clj-easy.tools.json)
 
 (defprotocol JSONReader
-  (read-str [s {:keys [key-fn]}]))
+  (read-str [this s {:keys [key-fn]}]))
 
 (defprotocol JSONWriter
-  (write-str [s {:keys []}]))
+  (write-str [this s {:keys []}]))
