@@ -7,7 +7,7 @@ Tools library similar to `clojure.tools.logging` but for misc. tools.
 At this point, tools.misc is the result of a 15 minute braindump. The protocols
 in this library are here to collect
 [feedback](https://github.com/clj-easy/tools.misc/discussions) and may change
-any time at this point, until we reach a community consensus on what is
+any time until we reach a community consensus on what is
 reasonable.
 
 ## Why
