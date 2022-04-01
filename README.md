@@ -17,7 +17,8 @@ offer. Instead the user can choose what they might be already using in their
 applications to reduce the total number of dependencies.
 
 In addition, this library _could_ give default implementations for popular
-libraries that end-users could just use out of the box.
+libraries that end-users could just use out of the box and library authors can
+use in their tests.
 
 ## `clj-easy.tools.json`
 
