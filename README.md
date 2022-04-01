@@ -1,6 +1,6 @@
 # tools.misc
 
-Abstraction library for misc tools.
+Abstraction library for misc. tools.
 
 ## Status
 
