@@ -30,21 +30,8 @@ join the conversation.
 
 ## `clj-easy.tools.json`
 
-Provides the `JSON` protocol with functions:
-
-``` clojure
-(defprotocol JSON
-  (read-str [s])
-  (write-str [s]))
-```
+See [here](https://github.com/clj-easy/tools.misc/blob/main/src/clj_easy/tools/json.clj).
 
 ## `clj-easy.tools.http-client`
 
-``` clojure
-(defprotocol HttpClient
-  (request [this request])
-  (get [this request])
-  (post [this request])
-  (put [this request])
-  (delete [this request]))
-```
+See [here](https://github.com/clj-easy/tools.misc/blob/main/src/clj_easy/tools/http_client.clj).
