@@ -1,6 +1,6 @@
 # tools.misc
 
-Abstraction library for misc. tools.
+Tools library similar to `clojure.tools.logging` but for misc. tools.
 
 ## Status
 
