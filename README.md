@@ -4,8 +4,11 @@ Tools library similar to `clojure.tools.logging` but for misc. tools.
 
 ## Status
 
-The protocols in this library are here to collect feedback and may change any
-time at this point, until we reach a community consensus on what is reasonable.
+At this point, tools.misc is the result of a 15 minute braindump. The protocols
+in this library are here to collect
+[feedback](https://github.com/clj-easy/tools.misc/discussions) and may change
+any time at this point, until we reach a community consensus on what is
+reasonable.
 
 ## Why
 
@@ -19,6 +22,11 @@ applications to reduce the total number of dependencies.
 In addition, this library _could_ give default implementations for popular
 libraries that end-users could just use out of the box and library authors can
 use in their tests.
+
+## Contributing
+
+Use [Github Discussions](https://github.com/clj-easy/tools.misc/discussions) to
+join the conversation.
 
 ## `clj-easy.tools.json`
 
