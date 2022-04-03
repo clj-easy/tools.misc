@@ -30,8 +30,8 @@ join the conversation.
 
 ## `clj-easy.tools.json`
 
-See [here](https://github.com/clj-easy/tools.misc/blob/main/src/clj_easy/tools/json.clj).
+See [here](https://github.com/clj-easy/tools.misc/blob/main/test/clj_easy/tools/misc/json_test.clj).
 
-## `clj-easy.tools.http-client`
+<!-- ## `clj-easy.tools.http-client` -->
 
-See [here](https://github.com/clj-easy/tools.misc/blob/main/src/clj_easy/tools/http_client.clj).
+<!-- See [here](https://github.com/clj-easy/tools.misc/blob/main/src/clj_easy/tools/http_client.clj). -->
