@@ -4,7 +4,7 @@
 
 (defn reg-provider! []
   (tools-json/reg-provider! 'org.clojure/data.json
-                            {:read-str (fn [s _opts]
-                                          (json/read-str s))
+                            {:read-str (fn [s {:keys [key-fn]}]
+                                         (json/read-str s {:key-fn (or key-fn keyword)}))
                              :write-str (fn [s _opts]
-                                         (json/write-str s))}))
+                                          (json/write-str s))}))

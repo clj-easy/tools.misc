@@ -1,0 +1,3 @@
+{:tasks
+ {test:clj {:doc "Run Clojure tests"
+            :task (clojure "-M:test-deps:test")}}}

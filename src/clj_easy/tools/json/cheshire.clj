@@ -4,7 +4,7 @@
 
 (defn reg-provider! []
   (tools-json/reg-provider! 'cheshire/cheshire
-                            {:read-str (fn [s _opts]
-                                         (cheshire/parse-string s))
+                            {:read-str (fn [s {:keys [key-fn]}]
+                                         (cheshire/parse-string s (or key-fn keyword)))
                              :write-str (fn [s _opts]
                                           (cheshire/generate-string s))}))

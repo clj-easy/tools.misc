@@ -2,13 +2,17 @@
 
 (def ^:private read-str-impl (volatile! nil))
 
-(defn read-str [s opts]
-  (@read-str-impl s opts))
+(defn read-str
+  ([s] (read-str s nil))
+  ([s opts]
+   (@read-str-impl s opts)))
 
 (def ^:private write-str-impl (volatile! nil))
 
-(defn write-str [s opts]
-  (@write-str-impl s opts))
+(defn write-str
+  ([s] (write-str s nil))
+  ([s opts]
+   (@write-str-impl s opts)))
 
 (def ^:private provider-impl
   (volatile! nil))
