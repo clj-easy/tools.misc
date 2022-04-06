@@ -1,3 +1,4 @@
 {:tasks
  {test:clj {:doc "Run Clojure tests"
-            :task (clojure "-M:test-deps:test")}}}
+            :task (do (clojure "-X:json/data-json:test")
+                      (clojure "-X:json/cheshire:test"))}}}
