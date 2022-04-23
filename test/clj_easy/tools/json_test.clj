@@ -7,7 +7,10 @@
     (is (= [1 2 3] (json/read-str "[1, 2, 3]")))
     (is (= {:a 1} (json/read-str "{\"a\": 1}")))
     (is (= {:a 1} (json/read-str "{\"a\": 1}" {:key-fn keyword})))
-    (is (= {"a" 1} (json/read-str "{\"a\": 1}" {:key-fn str}))))
+    (is (= {"a" 1} (json/read-str "{\"a\": 1}" {:key-fn str})))
+    (is (thrown-with-msg? clojure.lang.ExceptionInfo
+          #"Incomplete input"
+          (json/read-str "{\"a\": 1" {:key-fn str}))))
   (testing "write json"
     (is (= [1 2 3] (json/read-str (json/write-str [1 2 3]))))
     (is (= {:a 1} (json/read-str (json/write-str {:a 1}))))))
